@@ -4,13 +4,20 @@
     {
       "src": "server/db.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
       "dest": "server/db.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "client/$1"
     }
   ]
 }
-
