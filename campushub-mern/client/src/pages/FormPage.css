@@ -1,0 +1,41 @@
+.form-page {
+  padding: 44px 28px 70px;
+}
+
+.form-page-narrow {
+  max-width: 440px;
+}
+
+.form-card {
+  padding: 34px 32px;
+}
+
+.form-card h1 {
+  font-size: 24px;
+}
+
+.form-card > p {
+  margin-top: 6px;
+  margin-bottom: 24px;
+}
+
+.field-row {
+  display: flex;
+  gap: 14px;
+}
+
+.field-row .field {
+  flex: 1;
+}
+
+.switch-line {
+  text-align: center;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin-top: 20px;
+}
+
+.switch-line a {
+  color: var(--pine);
+  font-weight: 600;
+}

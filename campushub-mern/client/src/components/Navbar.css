@@ -1,0 +1,74 @@
+.navbar {
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  gap: 24px;
+}
+
+.brand {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--pine-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.brand-mark {
+  color: var(--amber);
+  font-size: 16px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 26px;
+  flex: 1;
+  justify-content: center;
+}
+
+.main-nav a {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  color: var(--pine-dark);
+}
+
+.main-nav a.active {
+  border-bottom-color: var(--amber);
+}
+
+.auth-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.welcome {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-right: 2px;
+}
+
+@media (max-width: 860px) {
+  .main-nav {
+    display: none;
+  }
+}
