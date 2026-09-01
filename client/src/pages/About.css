@@ -1,0 +1,42 @@
+.about-page {
+  padding: 48px 28px 70px;
+  max-width: 800px;
+}
+
+.about-page h1 {
+  font-size: 30px;
+}
+
+.about-lede {
+  margin-top: 14px;
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 620px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.about-card {
+  padding: 22px;
+}
+
+.about-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.about-card p {
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
